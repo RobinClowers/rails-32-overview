@@ -1,4 +1,6 @@
 Rails32Overview::Application.routes.draw do
+  root :to => "home#index"
+
   resources :posts
 
   # The priority is based upon order of creation:
