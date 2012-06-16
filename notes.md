@@ -43,6 +43,12 @@ $ ->
 rails generate model Comment commenter:string body:text post:references
 ```
 
+*app/models/post.rb*
+
+```ruby
+has_many :comments
+```
+
 *app/routes.rb*
 
 ```ruby
